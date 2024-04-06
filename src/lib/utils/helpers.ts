@@ -66,9 +66,9 @@ export function getTimeDiff(date1: Date, date2 = new Date(Date.now() + 1000 * 60
 		n = duration.as('years');
 	}
 
-	n = Math.trunc(n);
+	n = Math.round(n);
 
-	return `${Math.trunc(n)} ${u}${n > 1 ? 's' : ''}`;
+	return `${Math.round(n)} ${u}${n > 1 ? 's' : ''}`;
 }
 
 export type ItemOrSkill = Item | Skill;

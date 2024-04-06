@@ -26,6 +26,7 @@ const Assets = {
 	Rust: a('rust.svg', 'rust-dark.png'),
 	Scrapy: a('scrapy.png'),
 	Selenium: a('selenium.svg'),
+	NextJs: a('nextjs.png'),
 	Docker: a('docker.svg'),
 	Kubernetes: a('kubernetees.svg'),
 	Csharp: a('csharp.svg'),
@@ -70,7 +71,15 @@ const Assets = {
 	Jest: a('jest.png'),
 	Unocss: a('unocss.svg'),
 	Ruvy: a('ruvy.svg'),
-	Postcss: a('postcss.svg')
+	Postcss: a('postcss.svg'),
+	Idweaver: a('idweaver.svg'),
+	Inforius: a('inforius.png'),
+	Underside: a(  'underside-light.svg','underside.svg'),
+	Rush: a('rush.svg'),
+	AzureDevOps: a('azure-devops.svg'),
+	Ephec: a('ephec.png'),
+	ItSchool: a('it-school.png'),
+	Symfony: a('symfony.png')
 };
 
 export default Assets;
