@@ -8,7 +8,7 @@ export const items: Array<Education> = [
 		location: 'Louvain La Neuve - Belgium',
 		logo: Assets.Unknown,
 		name: '',
-		organization: 'ISTIC',
+		organization: 'EPHEC',
 		period: { from: new Date(2017, 8, 1), to: new Date(2020, 5, 1) },
 		shortDescription: '',
 		slug: 'ephec',
