@@ -79,7 +79,12 @@ const Assets = {
 	AzureDevOps: a('azure-devops.svg'),
 	Ephec: a('ephec.png'),
 	ItSchool: a('it-school.png'),
-	Symfony: a('symfony.png')
+	Symfony: a('symfony.png'),
+	Ionic: a('ionic.svg'),
+	ReactNative: a('react-native.svg'),
+	Prisma: a('prisma.svg'),
+	GraphQL: a('graphql.svg'),
+	TRPC: a('trpc.svg')
 };
 
 export default Assets;

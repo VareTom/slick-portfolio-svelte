@@ -16,7 +16,7 @@ export const items: Array<Project> = [
 		period: {
 			from: new Date()
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'),
+		skills: getSkills('angular'),
 		type: 'Website Template'
 	},
 	{
@@ -32,7 +32,7 @@ export const items: Array<Project> = [
 		period: {
 			from: new Date()
 		},
-		skills: getSkills('svelte', 'ts', 'tailwind', 'sass'),
+		skills: getSkills(),
 		type: 'Website Template',
 		screenshots: [
 			{

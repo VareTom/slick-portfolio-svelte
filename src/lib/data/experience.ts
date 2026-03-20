@@ -4,15 +4,15 @@ import { ContractType, type Experience } from '../types';
 
 export const items: Array<Experience> = [
 	{
-		slug: 'rush',
-		company: 'Rush',
-		description: 'Turning Ideas into Actionable Solutions at Lightning Speed.',
+		slug: 'rush-labs',
+		company: 'Rush Labs',
+		description: 'Mobile and web application development.',
 		contract: ContractType.FullTime,
 		type: 'Software Development',
 		location: 'Nivelles & Home - Belgium',
-		period: { from: new Date(2024, 4,6), to: new Date() },
-		skills: getSkills( 'sass', 'html', 'nextjs', 'nest', 'docker'),
-		name: 'Software engineer',
+		period: { from: new Date(2024, 4, 1) },
+		skills: getSkills('nextjs', 'nest', 'react-native', 'trpc', 'prisma', 'vitest'),
+		name: 'Full Stack Developer',
 		color: '#EF4444',
 		links: [
 			{
@@ -22,42 +22,38 @@ export const items: Array<Experience> = [
 			}
 		],
 		logo: Assets.Rush,
-		shortDescription: 'Design. Build. Ship.'
+		shortDescription: 'Mobile and web application development.'
 	},
 	{
 		slug: 'idweaver',
-		company: 'Idweaver',
-		description: 'One partner for all your digital needs. Our approach is based on a digital strategy specifically designed for each project, taking into account the particularities of your company, products and customers.',
+		company: 'IdWeaver',
+		description: 'Web application development.',
 		contract: ContractType.FullTime,
 		type: 'Software Development',
 		location: 'Waterloo & Home - Belgium',
-		period: { from: new Date(2023, 2,1), to: new Date(2024, 4, 5) },
-		skills: getSkills( 'sass', 'html', 'angular', 'vue', 'aws', 'azure'),
-		name: 'Front end developer',
+		period: { from: new Date(2023, 2, 1), to: new Date(2024, 4, 1) },
+		skills: getSkills('angular', 'nextjs', 'graphql', 'redis'),
+		name: 'Angular & NextJs Developer',
 		color: 'midnightblue',
 		links: [
 			{
 				to: 'https://www.idweaver.com/',
 				label: 'Idweaver website'
-			},
-			{
-				to: 'https://www.eneon.agency/',
-				label: 'Eneon group website'
 			}
 		],
 		logo: Assets.Idweaver,
-		shortDescription: 'Your brand new digital future'
+		shortDescription: 'Web application development.'
 	},
 	{
 		slug: 'underside',
 		company: 'Underside',
-		description: 'Creating awesome applications for customers.',
+		description: 'Mobile application and CMS development for various clients.',
 		contract: ContractType.FullTime,
 		type: 'Software Development',
 		location: 'Gosselies & Home - Belgium',
-		period: { from: new Date(2021,6,1), to: new Date(2023, 1, 28) },
-		skills: getSkills( 'sass', 'html', 'angular', 'express', 'python'),
-		name: 'Full stack developer',
+		period: { from: new Date(2021, 5, 1), to: new Date(2023, 2, 1) },
+		skills: getSkills('angular', 'ionic', 'python', 'redis'),
+		name: 'Full Stack Developer',
 		color: '#4963A4',
 		links: [
 			{
@@ -66,43 +62,47 @@ export const items: Array<Experience> = [
 			}
 		],
 		logo: Assets.Underside,
-		shortDescription: 'We support companies in their digital life.'
+		shortDescription: 'Mobile application and CMS development for various clients.'
 	},
 	{
 		slug: 'inforius',
 		company: 'Inforius',
-		description: 'Inforius is THE partner for the private and public sectors thanks to its technological, adapted, innovative and robust IT solutions.',
+		description: 'CMS development to digitize the services of Belgian municipal institutions.',
 		contract: ContractType.FullTime,
 		type: 'Software Development',
 		location: 'Gembloux - Belgium',
-		period: { from: new Date(2020, 7, 3), to: new Date(2021,6,1) },
-		skills: getSkills( 'sass', 'html', 'angular', 'azure'),
-		name: 'Junior front end developer',
+		period: { from: new Date(2020, 7, 1), to: new Date(2021, 5, 1) },
+		skills: getSkills('angular', 'azure'),
+		name: 'Software Developer',
 		color: 'orange',
-		links: [{
-			to: 'https://www.inforius.be/',
-			label: 'Inforius website'
-		}],
+		links: [
+			{
+				to: 'https://www.inforius.be/',
+				label: 'Inforius website'
+			}
+		],
 		logo: Assets.Inforius,
-		shortDescription: 'Creating awesome applications for customers.'
+		shortDescription: 'CMS development to digitize the services of Belgian municipal institutions.'
 	},
 	{
 		slug: 'itschool',
 		company: 'IT-School',
-		description: 'IT.SCHOOL frees the administrative and financial management of the school from all time-consuming tasks, ensures full transparency of operations for both the manager and parents and allows students to move in a «cashless» universe.',
+		description: 'Integration of new features into a web platform enabling schools to go digital.',
 		contract: ContractType.Internship,
 		type: 'Software Development',
 		location: 'Louvain La Neuve - Belgium',
-		period: { from: new Date(2020, 1, 1), to: new Date(2020,4,1) },
-		skills: getSkills('symfony'),
-		name: 'Internship - Full stack developer',
+		period: { from: new Date(2020, 1, 1), to: new Date(2020, 3, 1) },
+		skills: getSkills(),
+		name: 'Intern Full Stack Developer',
 		color: 'violet',
-		links: [{
-			to: 'https://www.it-school.be/',
-			label: 'IT-School website'
-		}],
+		links: [
+			{
+				to: 'https://www.it-school.be/',
+				label: 'IT-School website'
+			}
+		],
 		logo: Assets.ItSchool,
-		shortDescription: 'Administrative and financial management of schools'
+		shortDescription: 'Integration of new features into a web platform enabling schools to go digital.'
 	}
 ];
 

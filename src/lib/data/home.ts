@@ -14,4 +14,4 @@ export const links: Array<{ platform: Platform; link: string }> = [
 	{ platform: Platform.GitHub, link: 'https://github.com/VareTom' },
 ];
 
-export const skills = getSkills('angular', 'nextjs', 'docker', 'svelte', 'nest', 'go');
+export const skills = getSkills('angular', 'nextjs', 'nest', 'docker', 'react-native', 'prisma');

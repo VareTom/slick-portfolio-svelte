@@ -1,6 +1,5 @@
 import Assets from './assets';
 import type { Skill, SkillCategory } from '../types';
-import svelte from '../md/svelte.md?raw';
 import { omit, type StringWithAutoComplete } from '@riadh-adrani/utils';
 
 const defineSkillCategory = <S extends string>(data: SkillCategory<S>): SkillCategory<S> => data;
@@ -36,35 +35,9 @@ const defineSkill = <S extends string>(
 
 export const items = [
 	defineSkill({
-		slug: 'nest',
-		color: '#ED2945',
-		description: 'Nest (NestJS) is a framework for building efficient, scalable Node.js server-side applications. It uses progressive JavaScript, is built with and fully supports TypeScript (yet still enables developers to code in pure JavaScript) and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming).',
-		logo: Assets.NestJs,
-		name: 'Nest',
-		category: 'framework'
-	}),
-	defineSkill({
-		slug: 'js',
-		color: 'yellow',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.JavaScript,
-		name: 'Javascript',
-		category: 'pro-lang'
-	}),
-	defineSkill({
-		slug: 'ts',
-		color: 'blue',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.TypeScript,
-		name: 'Typescript',
-		category: 'pro-lang'
-	}),
-	defineSkill({
 		slug: 'angular',
 		color: 'red',
-		description: 'The web development framework for building the future',
+		description: 'The web development framework for building the future.',
 		logo: Assets.Angular,
 		name: 'Angular',
 		category: 'framework'
@@ -78,60 +51,27 @@ export const items = [
 		category: 'framework'
 	}),
 	defineSkill({
-		slug: 'docker',
-		color: '#1D63ED',
-		description: 'Docker is a platform designed to help developers build, share, and run container applications.',
-		logo: Assets.Docker,
-		name: 'Docker',
-		category: 'devops'
-	}),
-	defineSkill({
-		slug: 'vue',
-		color: '#42B883',
-		description: 'An approachable, performant and versatile framework for building web user interfaces.',
-		logo: Assets.VueJs,
-		name: 'VueJs',
+		slug: 'nest',
+		color: '#ED2945',
+		description: 'Nest (NestJS) is a framework for building efficient, scalable Node.js server-side applications.',
+		logo: Assets.NestJs,
+		name: 'NestJs',
 		category: 'framework'
 	}),
 	defineSkill({
-		slug: 'html',
-		color: 'orange',
-		description: 'HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.',
-		logo: Assets.HTML,
-		name: 'HTML',
-		category: 'markup-style'
-	}),
-	defineSkill({
-		slug: 'sass',
-		color: 'pink',
-		description: 'Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.',
-		logo: Assets.Sass,
-		name: 'Sass',
-		category: 'markup-style'
-	}),
-	defineSkill({
-		slug: 'reactjs',
+		slug: 'react-native',
 		color: 'cyan',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.ReactJs,
-		name: 'React Js',
-		category: 'library'
+		description: 'React Native lets you build mobile apps using only JavaScript and React.',
+		logo: Assets.ReactNative,
+		name: 'React Native',
+		category: 'framework'
 	}),
 	defineSkill({
-		slug: 'svelte',
-		color: 'orange',
-		description: svelte,
-		logo: Assets.Svelte,
-		name: 'Svelte',
-		category: 'library'
-	}),
-	defineSkill({
-		slug: 'express',
-		color: 'green',
-		description: 'Fast, unopinionated, minimalist web framework for Node.js',
-		logo: Assets.ExpressJs,
-		name: 'ExpressJs',
+		slug: 'ionic',
+		color: '#3880FF',
+		description: 'Ionic is an open source mobile UI toolkit for building modern, high quality cross-platform mobile apps.',
+		logo: Assets.Ionic,
+		name: 'Ionic',
 		category: 'framework'
 	}),
 	defineSkill({
@@ -143,28 +83,60 @@ export const items = [
 		category: 'pro-lang'
 	}),
 	defineSkill({
-		slug: 'symfony',
-		color: '#42B883',
-		description: 'Symfony is a set of reusable PHP components and a PHP framework to build web applications, APIs, microservices and web services.',
-		logo: Assets.Symfony,
-		name: 'Symfony',
-		category: 'framework'
-	}),
-	defineSkill({
-		slug: 'aws',
-		color: '#EC7211',
-		description: 'Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services. Free to join, pay only for what you use.',
-		logo: Assets.AWS,
-		name: 'AWS',
-		category: 'framework'
+		slug: 'docker',
+		color: '#1D63ED',
+		description: 'Docker is a platform designed to help developers build, share, and run container applications.',
+		logo: Assets.Docker,
+		name: 'Docker',
+		category: 'devops'
 	}),
 	defineSkill({
 		slug: 'azure',
 		color: '#0067B8',
-		description: '',
+		description: 'Azure is a cloud computing platform and service created by Microsoft.',
 		logo: Assets.AzureDevOps,
-		name: 'Azure DevOps',
+		name: 'Azure',
 		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'redis',
+		color: '#DC382D',
+		description: 'Redis is an open source, in-memory data structure store, used as a database, cache, and message broker.',
+		logo: Assets.Redis,
+		name: 'Redis',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'prisma',
+		color: '#2D3748',
+		description: 'Prisma is a next-generation ORM for Node.js and TypeScript.',
+		logo: Assets.Prisma,
+		name: 'Prisma ORM',
+		category: 'orm'
+	}),
+	defineSkill({
+		slug: 'graphql',
+		color: '#E10098',
+		description: 'GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.',
+		logo: Assets.GraphQL,
+		name: 'GraphQL',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'trpc',
+		color: '#2596BE',
+		description: 'tRPC allows you to easily build and consume fully typesafe APIs without schemas or code generation.',
+		logo: Assets.TRPC,
+		name: 'tRPC',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'vitest',
+		color: '#6E9F18',
+		description: 'Vitest is a blazing fast unit test framework powered by Vite.',
+		logo: Assets.Vitest,
+		name: 'Vitest',
+		category: 'test'
 	}),
 ] as const;
 
