@@ -28,7 +28,7 @@ const Assets = {
 	Selenium: a('selenium.svg'),
 	NextJs: a('nextjs.png'),
 	Docker: a('docker.svg'),
-	Kubernetes: a('kubernetees.svg'),
+	Kubernetes: a('kubernetes.svg'),
 	Csharp: a('csharp.svg'),
 	Xamarin: a('xamarin.svg'),
 	TypeScript: a('ts.png'),
